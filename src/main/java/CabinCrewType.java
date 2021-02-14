@@ -5,6 +5,7 @@ public enum CabinCrewType {
     THIRD_OFFICER,
     PURSER,
     FLIGHT_ATTENDANT,
-    FLIGHT_ENGINEER
+    FLIGHT_ENGINEER,
+    PILOT
 
 }
