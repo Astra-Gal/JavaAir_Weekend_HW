@@ -49,4 +49,16 @@ public class FlightTest {
     public void canGetNumberOfSeats() {
         assertEquals(4, plane.getNumberOfSeats());
     }
+
+
+    @Test
+    public void checkPassengerCountStartsAtZero() {
+        assertEquals(0, flight.passengerCount());
+    }
+
+    @Test
+    public void canBookPassenger() {
+        flight.bookPassenger(passenger1);
+        assertEquals(1, flight.passengerCount());
+    }
 }

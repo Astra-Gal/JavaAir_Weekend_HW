@@ -26,4 +26,13 @@ public class Flight {
     }
 
 
+    public int passengerCount() {
+        return passengers.size();
+    }
+
+    public void bookPassenger(Passenger passenger) {
+        if (passengerCount() < this.plane.getNumberOfSeats()) {
+            this.passengers.add(passenger);
+        }
+    }
 }
