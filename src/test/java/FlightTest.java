@@ -61,4 +61,14 @@ public class FlightTest {
         flight.bookPassenger(passenger1);
         assertEquals(1, flight.passengerCount());
     }
+
+    @Test
+    public void checkCannotOverBookFlight() {
+        flight.bookPassenger(passenger1);
+        flight.bookPassenger(passenger1);
+        flight.bookPassenger(passenger1);
+        flight.bookPassenger(passenger1);
+        flight.bookPassenger(passenger1);
+        assertEquals(4, flight.passengerCount());
+    }
 }
