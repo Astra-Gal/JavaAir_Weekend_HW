@@ -16,4 +16,8 @@ public class CabinCrewMember {
     public CabinCrewType getRank() {
         return this.cabinCrewType;
     }
+
+    public String relayMessage() {
+        return "Passengers are reminded that smoking in the toilets is strictly prohibited and will result in being ejected unceremoniously from the plane in middair";
+    }
 }
