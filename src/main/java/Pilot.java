@@ -7,4 +7,7 @@ public class Pilot extends CabinCrewMember {
     }
 
 
+    public String flyPlane() {
+        return "Wow! I'm flying a plane! Now if I can only remember how to land the goshdarn thing...";
+    }
 }
